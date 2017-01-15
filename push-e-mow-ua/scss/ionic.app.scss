@@ -1,0 +1,93 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$stable: #4A96AD;
+$primary: #4A96AD; 
+$secondary: #f1c40f;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+.scroll-content {
+	background: #F5F3EE;
+	font-family: arial, sans-serif;
+
+	h1, h2 {
+		font-family: 'Titan One', cursive;
+	}	
+
+	h2 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+
+.bar.bar-stable .title {
+	color: $secondary;
+	font-family: 'Titan One', cursive;
+	font-size: 32px;
+}
+
+.tabs-striped .tabs {
+	background: $primary;
+}
+
+/* Android */
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active{
+	color: $secondary;
+	border-color: $secondary;
+} 
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active {
+	color: $secondary;
+	border-color: $secondary;
+}
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+	color: lighten($secondary, 20);
+	border-color: lighten($secondary, 20);
+}
+
+
+ion-tabs.tabs-color-active-positive .tab-item {
+	color: #fff;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active,
+{
+	color: $secondary;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item.activated {
+	color: lighten($secondary, 20);
+}
+
+.bar.bar-stable.itemTitle .title {
+	color: $secondary;
+	font-family: 'Titan One', cursive;
+	font-size: 20px;
+}
+
+.bar-stable .button.button-clear {
+	color: lighten($secondary, 20);
+	font-size: 16px;
+}

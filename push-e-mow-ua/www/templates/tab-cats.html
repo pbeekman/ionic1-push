@@ -1,0 +1,12 @@
+<ion-view view-title="Cats overview">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="cat in cats" type="item-text-wrap" href="#/tab/cats/{{cat.id}}">
+        <img ng-src="{{cat.face}}">
+        <h2>{{cat.name}}</h2>
+        <p>{{cat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
