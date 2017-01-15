@@ -1,0 +1,12 @@
+<ion-view view-title="Dogs overview">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="dog in dogs" type="item-text-wrap" href="#/tab/dogs/{{dog.id}}">
+        <img ng-src="{{dog.face}}">
+        <h2>{{dog.name}}</h2>
+        <p>{{dog.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
